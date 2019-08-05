@@ -16,7 +16,22 @@ You can add these as run arguments as follows
     nurullah$ mvn spring-boot:run -Dspring-boot.run.arguments=--server.port=9090,--server.servlet.context-path=/nurullah
 
 which (if both are provided) will server the application from `localhost:9090/nurullah`
+   
+### Health Check
+
+Health check can be made via;
+
+    localhost:8080/actuator/health
+
+### Metrics 
+
+Available metrics can be seen under
+
+    localhost:8080/actuator/metrics
     
+Then each metric can be monitored via;
+
+    localhost:8080/actuator/metrics/{METRIC_NAME}
 
 #### Running tests
 
